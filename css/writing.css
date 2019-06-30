@@ -1,0 +1,21 @@
+.links {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.links a {
+  display: inline-block;  /* Кнопка должна быть display: block */
+  width: 300px;  /* Ширина */
+  height: 50px;  /* Высота */
+  line-height: 50px;  /* Одинаковое с высотой значение центрирует текст кнопки по вертикали */
+  color: black;  /* Белый цвет шрифта */
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid black;  /* Делаем белую рамочку у кнопки */
+  border-radius: 10px;  /* Закругляем рамочку */
+}

@@ -1,0 +1,31 @@
+.links {
+  width: 100%;
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.links a {
+  display: inline-block;
+  width: 49%;
+  height: 10%;
+  line-height: 50px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.about {
+  display: inline-block;
+  font-size: 30pt;
+}
+
+.about img {
+  float: left;
+  width: 30%;
+}
