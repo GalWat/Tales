@@ -1,31 +1,53 @@
-.links {
-  width: 100%;
-  /* max-width: 1400px; */
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  border: 2px solid black;
+html {
+  /* overflow: hidden; */
 }
 
-.links a {
-  display: inline-block;
-  width: 49%;
-  height: 10%;
-  line-height: 50px;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 10px;
+body {
+  margin-bottom: 5vh;
+}
+
+nav {
+  bottom: 0;
 }
 
 .about {
-  display: inline-block;
-  font-size: 30pt;
+  font-size: 2rem;
+  /* text-align: center; */
+
+  position: relative;
+  border: 2px solid black;
+  /* text-align: right; */
 }
 
 .about img {
-  float: left;
-  width: 30%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  /* float: left; */
+  width: 20vw;
+
+  border: 2px solid black;
+}
+
+.about h1 {
+  /* display: block; */
+
+  /* text-align: center; */
+
+  border: 2px solid black;
+}
+
+.about ul {
+  border: 2px solid black;
+  /* margin: 0 auto; */
+
+  /* list-style-type: none; */
+  /* list-style-position: inside; */
+
+}
+
+.about div {
+    border: 2px solid black;
+    margin-left: 21vw;
 }
