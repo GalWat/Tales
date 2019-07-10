@@ -6,7 +6,7 @@ nav {
   position: fixed;
 
   text-align: center;
-  background-color: blue;
+  /* background-color: blue; */
   /* border: 2px solid black; */
 }
 
@@ -25,7 +25,7 @@ nav a {
   text-decoration: none;
   text-align: center;
 
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 nav img {
