@@ -1,15 +1,40 @@
-html {
-  /* overflow: hidden; */
-}
-
-body {
-  margin-top: 15vh;
-}
-
-.writings {
-  /* padding-top: 15vh; */
-}
-
 nav {
   top: 0px;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+  details {
+    border: 2px solid black;
+    padding: 20px;
+  }
+
+  details[open] > summary {
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+@media screen and (min-width: 1400px) {
+  body {
+    margin-top: 13vh;
+  }
+
+  main {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media screen and (max-width:900px) {
+  body {
+    margin-top: 10vh;
+  }
+
+  main {
+    font-size: 1rem;
+  }
 }
