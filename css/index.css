@@ -40,7 +40,7 @@ nav {
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:900px) and (orientation: portrait) {
   body {
     margin-bottom: 7vh;
   }
@@ -80,22 +80,29 @@ nav {
 }
 
 
-@media screen and (max-width:1280px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
   body {
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
   }
 
   .img-alt {
+    /* display: none !important; */
+  }
+
+  .img-main {
     display: none !important;
   }
 
   .about {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .about img {
-    width: 35%;
+    width: 50%;
     float: left;
+
+    border-radius: 50%;
+    border: 2px solid black;
 
     /* border-radius: 50%; */
 
@@ -103,25 +110,23 @@ nav {
   }
 
   .about div {
-      margin-left: 35%;
+      margin-left: 50%;
       /* margin-right: 10%; */
+      /* padding-left: 10vw; */
 
       /* border: 2px solid black; */
   }
 
-  .about h1 {
-    text-align: center;
-    margin-bottom: -1px;
+  .about ul {
+    /* list-style-position: inside; */
 
     /* border: 2px solid black; */
   }
 
-  nav {
-    height: 10vh;
-  }
+  .about h1 {
+    text-align: center;
+    line-height: 5vh;
 
-  nav a {
-    height: 100%;
-    width: 35%;
+    /* border: 2px solid black; */
   }
 }
