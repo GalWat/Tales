@@ -50,3 +50,9 @@ details[open] > summary {
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width:900px) and (orientation: landscape) {
+  body {
+    margin-top: 13vh;
+  }
+}
