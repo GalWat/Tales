@@ -33,6 +33,8 @@ nav img {
 
 @media screen and (min-width: 901px) {
   nav a {
+    width: 35%;
+
     height: 10vh;
     line-height: 10vh;
   }
@@ -48,6 +50,8 @@ nav img {
 
 @media screen and (max-width:900px) and (orientation: landscape) {
   nav a {
+    width: 35%;
+
     height: 10vh;
     line-height: 10vh;
   }
