@@ -11,11 +11,6 @@ details > summary {
   list-style: none;
 }
 
-details {
-  /* border: 2px solid black; */
-  padding: 0px;
-}
-
 summary:hover {
   background-color: #A9A9A9;
 }
