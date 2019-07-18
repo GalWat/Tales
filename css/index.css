@@ -116,6 +116,7 @@ nav {
   .about ul {
     /* list-style-position: inside; */
     margin-top: 0px;
+    line-height: 80%;
 
     /* border: 2px solid black; */
   }
