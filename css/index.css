@@ -82,10 +82,10 @@ nav {
 
 @media screen and (max-width:1280px) and (orientation: landscape) {
   body {
-    margin-bottom: 7vh;
+    margin-bottom: 10vh;
   }
 
-  .img-main {
+  .img-alt {
     display: none !important;
   }
 
@@ -97,9 +97,9 @@ nav {
     width: 35%;
     float: left;
 
-    border-radius: 50%;
+    /* border-radius: 50%; */
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
   }
 
   .about div {
@@ -111,9 +111,13 @@ nav {
 
   .about h1 {
     text-align: center;
-    margin-bottom: 1px;
+    /* margin-bottom: 1px; */
 
     /* border: 2px solid black; */
+  }
+
+  nav {
+    height: 10vh;
   }
 
   nav a {
