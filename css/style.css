@@ -41,7 +41,7 @@ nav img {
 }
 
 
-@media screen and (max-width:900px) and (orientation: portrait) {
+@media screen and (max-width:900px) {
   nav a {
     height: 7vh;
     line-height: 7vh;

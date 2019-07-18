@@ -40,7 +40,7 @@ nav {
 }
 
 
-@media screen and (max-width:900px) and (orientation: portrait) {
+@media screen and (max-width:900px) {
   body {
     margin-bottom: 7vh;
   }
@@ -74,36 +74,18 @@ nav {
 
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
-  body {
-    margin-bottom: 7vh;
-  }
-
-  .img-alt {
-    /* display: none !important; */
-  }
-
-  .img-main {
-    display: none !important;
-  }
-
   .about {
     font-size: 0.9rem;
   }
 
   .about img {
     width: 50%;
+    display: inline;
     float: left;
-
-    border-radius: 50%;
-    border: 2px solid black;
   }
 
   .about div {
       margin-left: 50%;
-      /* margin-right: 10%; */
-      /* padding-left: 10vw; */
-
-      /* border: 2px solid black; */
   }
 
   .about ul {
@@ -115,11 +97,6 @@ nav {
   }
 
   .about h1 {
-    text-align: center;
-    /* line-height: 0px; */
-    margin-top: 0px;
     margin-bottom: 0px;
-
-    /* border: 2px solid black; */
   }
 }
