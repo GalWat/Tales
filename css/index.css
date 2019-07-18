@@ -125,7 +125,7 @@ nav {
 
   .about h1 {
     text-align: center;
-    line-height: 5vh;
+    line-height: 0px;
 
     /* border: 2px solid black; */
   }
