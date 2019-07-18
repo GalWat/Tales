@@ -31,7 +31,7 @@ nav img {
 }
 
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 901px) {
   nav a {
     height: 10vh;
     line-height: 10vh;

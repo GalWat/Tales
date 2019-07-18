@@ -26,7 +26,7 @@ details[open] > summary {
   padding: 5px;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 901px) {
   body {
     margin-top: 13vh;
     margin-left: 10%;
