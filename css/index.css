@@ -80,7 +80,7 @@ nav {
 }
 
 
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 1280px) and (orientation: landscape) {
   body {
     margin-bottom: 7vh;
   }
@@ -103,10 +103,6 @@ nav {
 
     border-radius: 50%;
     border: 2px solid black;
-
-    /* border-radius: 50%; */
-
-    /* border: 2px solid black; */
   }
 
   .about div {
@@ -119,13 +115,16 @@ nav {
 
   .about ul {
     /* list-style-position: inside; */
+    margin-top: 0px;
 
     /* border: 2px solid black; */
   }
 
   .about h1 {
     text-align: center;
-    line-height: 0px;
+    /* line-height: 0px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
 
     /* border: 2px solid black; */
   }
