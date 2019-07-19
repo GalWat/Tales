@@ -1,13 +1,13 @@
+* {
+  /* border: 2px solid black; */
+}
+
 nav {
   position: fixed;
   left: 0px;
   width: 100%;
 
-  /* box-sizing: border-box; */
-
   text-align: center;
-  /* background-color: blue; */
-  /* border: 2px solid black; */
 }
 
 nav a {

@@ -3,12 +3,10 @@ nav {
 }
 
 details > summary {
-  padding: 2px 6px;
-  height: 1.5em;
+  padding: 6px;
+  line-height: 2em;
   background-color: #ddd;
-  border: none;
-  box-shadow: 3px 3px 4px black;
-  list-style: none;
+  /* box-shadow: 3px 3px 4px black; */
 }
 
 summary:hover {
@@ -16,14 +14,30 @@ summary:hover {
 }
 
 details[open] {
-  background-color: white;
-  border: 2px solid black;
-  padding: 10px;
+  /* border: 2px solid black; */
+  /* padding: 10px; */
 }
 
 details[open] > summary {
+  font-weight: bold;
+}
+
+details > article {
+  margin-left: 1%;
+  margin-right: 1%;
+
+  text-indent: 2%;
+  font-variant: small-caps;
+  /* text-align: justify; */
+}
+
+details {
   border: 2px solid black;
-  padding: 5px;
+
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 @media screen and (min-width: 901px) {
@@ -34,7 +48,7 @@ details[open] > summary {
   }
 
   main {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
 }
 
