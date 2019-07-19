@@ -89,9 +89,8 @@ nav {
   }
 
   .about ul {
-    /* list-style-position: inside; */
     margin-top: 0px;
-    line-height: 95%;
+    line-height: 100%;
 
     /* border: 2px solid black; */
   }
