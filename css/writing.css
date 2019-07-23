@@ -40,6 +40,20 @@ details {
   margin-right: 1%;
 }
 
+figure {
+  text-align: center;
+  text-indent: 0;
+  width: 100%;
+
+  margin-left: 0;
+}
+
+figure > img {
+  border-radius: 10%;
+
+  width: 90%;
+}
+
 @media screen and (min-width: 901px) {
   body {
     margin-top: 13vh;
