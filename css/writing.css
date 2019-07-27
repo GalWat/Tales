@@ -3,9 +3,12 @@ nav {
 }
 
 details > summary {
+  font-family: 'Neucha', cursive;
+  font-size: 22px;
   padding: 6px;
   line-height: 2em;
   background-color: #ddd;
+  border-radius: 10%;
   /* box-shadow: 3px 3px 4px black; */
 }
 

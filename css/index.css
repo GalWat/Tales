@@ -4,7 +4,11 @@ nav {
 
 .about {
   overflow: auto;
-  /* border: 2px solid black; */
+  font-family: 'Neucha', cursive;
+}
+
+.about h1 {
+  font-family: 'Neucha', cursive;
 }
 
 .about ul {
