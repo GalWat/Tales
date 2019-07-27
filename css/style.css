@@ -34,10 +34,10 @@ nav img {
 @media screen and (min-width: 901px) {
   nav a {
     width: 35%;
-    max-width: 500px;
+    max-width: 400px;
 
-    height: 10vh;
-    line-height: 10vh;
+    /* height: 10vh; */
+    /* line-height: 10vh; */
   }
 }
 
