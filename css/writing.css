@@ -27,7 +27,7 @@ details > article {
   margin-right: 1%;
 
   text-indent: 2%;
-  font-variant: small-caps;
+  /* font-variant: small-caps; */
   /* text-align: justify; */
 }
 
