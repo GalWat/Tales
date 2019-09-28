@@ -5,7 +5,7 @@ raw_dir = r"src\raw"
 outp = []
 
 for file in reversed(os.listdir(raw_dir)):
-    filename, extension = os.path.splitext(file)
+    _, extension = os.path.splitext(file)
     if extension == ".md":
         path = os.path.join(raw_dir, file)
         with open(path, "r", encoding='utf-8') as inp_file:
