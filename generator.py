@@ -1,21 +1,24 @@
 import os
+from jinja2 import Template
 
-raw_dir = r"src\raw"
+raw_dir = "raw"
 
-outp = []
+names = []
+files = {}
 
 for file in reversed(os.listdir(raw_dir)):
-    _, extension = os.path.splitext(file)
+    file_name, extension = os.path.splitext(file)
+
     if extension == ".md":
         path = os.path.join(raw_dir, file)
-        with open(path, "r", encoding='utf-8') as inp_file:
-            outp.append("<details> <summary>" + inp_file.readline()[:-1] + "</summary>\n")
-            outp.append("\t<article>\n")
-            for line in inp_file:
-                if line != "\n":
-                    outp.append(f"\t\t<p>{line[:-1]}</p>\n")
-            outp.append("\t</article>\n")
-            outp.append("</details>\n\n")
 
-with open("generated.html", "w", encoding="utf-8") as outp_file:
-    outp_file.write("".join(outp))
+        with open(path, "r", encoding='utf-8') as inp_file:
+            lines = inp_file.read().splitlines()
+            names.append((file_name, lines[0]))
+            files[file_name] = lines[1:]
+
+with open('templates\writing.html', 'r', encoding='utf-8') as tmp_file:
+    template = Template(tmp_file.read())
+
+    with open("generated.html", "w", encoding="utf-8") as outp_file:
+        outp_file.write(template.render(names_list=names, files_dict=files))

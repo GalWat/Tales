@@ -13,8 +13,8 @@
 <body>
     <section>
         <nav class="list">
-            {% for name in names_list %}
-            <input value="{{ title }}" onclick=choose(name) type="button" name="{{ name }}">
+            {% for name, title in names_list %}
+            <input value='{{ title }}' onclick=choose(name) type="button" name="{{ name }}">
             {% endfor %}
         </nav>
 
@@ -26,9 +26,9 @@
 
     <main>
         <article>
-            {% for name in names_list %}
+            {% for name, _ in names_list %}
             <div id="{{ name }}" style="display: none;">
-                {% for line in file %}
+                {% for line in files_dict[name] %}
                 <p>{{ line }}</p>
                 {% endfor %}
             </div>
