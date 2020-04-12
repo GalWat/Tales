@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>GW Writing</title>
+    <link href='css/writing.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section>
+        <nav class="list">
+            {% for name in names_list %}
+            <input value="{{ title }}" onclick=choose(name) type="button" name="{{ name }}">
+            {% endfor %}
+        </nav>
+
+        <nav class="menu">
+            <a href="index.html"><img src="img/home.png" alt="Домой"></a>
+            <a href="programming.html"><img src="img/programmes.png" alt="Программы"></a>
+        </nav>
+    </section>
+
+    <main>
+        <article>
+            {% for name in names_list %}
+            <div id="{{ name }}" style="display: none;">
+                {% for line in file %}
+                <p>{{ line }}</p>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </article>
+    </main>
+
+    <script>
+        var previous = document.querySelector("input").name;
+        function choose(name) {
+            document.getElementById(previous).style.display = "none";
+            document.getElementById(name).style.display = "block";
+            previous = name;
+        }
+    </script>
+</body>
+
+</html>
