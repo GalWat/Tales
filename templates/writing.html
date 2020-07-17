@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>GW Writing</title>
+    <link href='css/writing.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section>
+        <nav class="list">
+            {% for name, title in names_list %}
+            <input value='{{ title }}' onclick=choose(name) type="button" name="{{ name }}"> {% endfor %}
+        </nav>
+
+        <nav class="menu">
+            <a href="index.html"><img src="img/home.svg" alt="Домой"></a>
+            <a href="programming.html"><img src="img/programmes.svg" alt="Программы"></a>
+        </nav>
+    </section>
+
+    <main>
+        <article>
+            {% for name, _ in names_list %}
+            <div id="{{ name }}" style="display: none;">
+                {% for line in files_dict[name] %} 
+                <p>{{ line }}</p> {% endfor %}
+            </div>
+            {% endfor %}
+        </article>
+    </main>
+
+    <script>
+        var previous = document.querySelector("input").name;
+        function choose(name) {
+            document.getElementById(previous).style.display = "none";
+            document.getElementById(name).style.display = "block";
+
+            var prevBtn = document.getElementsByName(previous)[0];
+            prevBtn.style.fontWeight = "normal";
+            prevBtn.style.backgroundColor = "inherit";
+            var btn = document.getElementsByName(name)[0];
+            btn.style.fontWeight = "bold";
+            btn.style.backgroundColor = "#838383";
+            previous = name;
+        }
+    </script>
+</body>
+
+</html>
