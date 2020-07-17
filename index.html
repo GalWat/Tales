@@ -1,39 +1,42 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet"> -->
   <meta charset='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="yandex-verification" content="dc7a3e870a8bc0d7" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>GalWat</title>
-  <link href='css/style.css' rel='stylesheet'>
+  <!-- <link href='css/style.css' rel='stylesheet'> -->
   <link href='css/index.css' rel='stylesheet'>
 </head>
 
 <body>
+    <!-- <div class="main">
+        <a href="writing.html"><img class="left" src="img/left2.png" alt="Рассказы"></a>
+        <a href="about.html"><img class="middle" src="img/mid.png" alt="Обо мне"></a>
+        <a href="programming.html"><img class="right" src="img/right2.png" alt="Программы"></a>
+    </div> -->
 
-  <main class="about">
-    <img class="img-alt" src="img/avatar-900px.png" alt="Шива">
-    <img class="img-main" src="img/avatar.png" alt="Шива">
-    <div>
-      <h1>GalWat</h1>
-      <ul>
-        <li>~ немного писатель</li>
-        <li>~ немного программист</li>
-        <li>~ эникейщик</li>
-        <li>~ балагур</li>
-        <li>~ мечтатель</li>
-        <li>~ просто хороший человек</li>
-      </ul>
+    <div class="main">
+        <img class="left" src="img/left2.png" alt="Рассказы" onclick="document.location.href = 'writing.html';">
+        <img class="middle" src="img/mid.png" alt="Обо мне" onclick="document.location.href = 'about.html';">
+        <img class="right" src="img/right2.png" alt="Программы" onclick="document.location.href = 'programming.html';">
     </div>
-  </main>
 
-  <footer>
-    <nav>
-      <a href="writing.html"><img src="img/tales.svg" alt="Рассказы"></a>
-      <a href="programming.html"><img src="img/programmes.svg" alt="Программы"></a>
-    </nav>
-  </footer>
+    <script>
+        var left = document.querySelector(".left");
+        var mid = document.querySelector(".middle");
+        var right = document.querySelector(".right");
+
+        function resize() {
+            var midWidth = mid.offsetWidth;
+            left.style.marginRight = -(midWidth);
+            right.style.marginLeft = -(midWidth);
+        }
+
+        window.addEventListener('load', resize);
+        window.addEventListener('resize', resize);
+    </script>
 
 </body>
 </html>

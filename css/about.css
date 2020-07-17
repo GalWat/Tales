@@ -1,0 +1,106 @@
+nav {
+  bottom: 0;
+}
+
+.about {
+  overflow: auto;
+  font-family: 'Neucha', cursive;
+}
+
+.about h1 {
+  font-family: 'Neucha', cursive;
+}
+
+.about ul {
+  font-size: 150%;
+  margin-right: 5%;
+
+  list-style-type: none;
+  list-style-position: outside;
+
+  /* border: 2px solid black; */
+}
+
+@media screen and (min-width: 901px) {
+  body {
+    margin-bottom: 10vh;
+  }
+
+  .img-alt {
+    display: none;
+  }
+
+  .about {
+    font-size: 2rem;
+  }
+
+  .about img {
+    float: left;
+    width: 30%;
+  }
+
+  .about div {
+    margin-left: 35%;
+  }
+}
+
+
+@media screen and (max-width:900px) {
+  body {
+    margin-bottom: 7vh;
+  }
+
+  .img-main {
+    display: none !important;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+
+  .about img {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+
+    border-radius: 50%;
+
+    border: 2px solid black;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 1px;
+
+    /* border: 2px solid black; */
+  }
+}
+
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .about {
+    font-size: 0.9rem;
+  }
+
+  .about img {
+    width: 50%;
+    display: inline;
+    float: left;
+  }
+
+  .about div {
+      margin-left: 50%;
+  }
+
+  .about ul {
+    margin-top: 0px;
+    line-height: 100%;
+
+    /* border: 2px solid black; */
+  }
+
+  .about h1 {
+    margin-bottom: 0px;
+  }
+}
