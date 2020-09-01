@@ -3,10 +3,21 @@
   overflow: hidden;
   margin: 0;
 }
-::-webkit-scrollbar {display:none;}
+/* ::-webkit-scrollbar {display:none;} */
 
+details summary {
+  outline: none;
+}
 
-input {
+details[open] > summary {
+  font-weight: bold;
+}
+
+article {
+  text-indent: 35px;
+}
+
+input, details {
   font-family: 'Neucha', cursive;
   font-size: 22px;
   padding: 6px;
