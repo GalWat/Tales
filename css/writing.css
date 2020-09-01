@@ -13,6 +13,10 @@ details[open] > summary {
   font-weight: bold;
 }
 
+details[open] {
+  background-color: inherit;
+}
+
 article {
   text-indent: 35px;
 }

@@ -13,7 +13,12 @@
 <body>
     <section>
         <div class="list">
-            {% for name, title in names_list %}
+            {% for folder in content.folders %}
+            <details><summary>{{ folder }}</summary>
+                {% for name, title in content.folders[folder] %}
+                <input value='{{ title }}' onclick=choose(name) type="button" name="{{ name }}"> {% endfor %}
+            </details>{% endfor %}
+            {% for name, title in content.files %}
             <input value='{{ title }}' onclick=choose(name) type="button" name="{{ name }}"> {% endfor %}
         </div>
 
@@ -25,7 +30,14 @@
 
     <main>
         <article>
-            {% for name, _ in names_list %}
+            {% for folder in content.folders %}{% for name, _ in content.folders[folder] %}
+            <div id="{{ name }}" style="display: none;">
+                {% for line in next_line(name, folder) %} 
+                <p>{{ line }}</p> {% endfor %}
+            </div>
+            {% endfor %}{% endfor %}
+
+            {% for name, _ in content.files %}
             <div id="{{ name }}" style="display: none;">
                 {% for line in next_line(name) %} 
                 <p>{{ line }}</p> {% endfor %}
